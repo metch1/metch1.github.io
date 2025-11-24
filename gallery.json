@@ -1,0 +1,71 @@
+[
+  {
+    "type": "design",
+    "title": "BS Thumbnail",
+    "desc": "Crazy thumb showing finx from brawl stars",
+    "thumb": "art/art.jpg",
+    "tag": "Graphic Design"
+  },
+  {
+    "type": "design",
+    "title": "Event BS",
+    "desc": "Looks like a crazy leaderboard",
+    "thumb": "art/art2.jpg",
+    "tag": "Graphic Design"
+  },
+  {
+    "type": "design",
+    "title": "Racist brock",
+    "desc": "Looks like diddy brock",
+    "thumb": "art/art3.png",
+    "tag": "Graphic Design"
+  },
+  {
+    "type": "video",
+    "title": "Web Show",
+    "desc": "13-second of Showcasing",
+    "thumb": "art/art6.png",
+    "video": "art/art.mp4",
+    "tag": "Video Editing"
+  },
+  {
+    "type": "video",
+    "title": "YouTube Content",
+    "desc": "Fast ban method",
+    "thumb": "art/art5.jpg",
+    "video": "art/art2.mp4",
+    "tag": "Video Editing"
+  },
+  {
+    "type": "video",
+    "title": "Short Film",
+    "desc": "Have no idea tbh",
+    "thumb": "art/art4.png",
+    "video": "art/art.mp4",
+    "tag": "Video Editing"
+  },
+  {
+    "type": "motion",
+    "title": "Juan Logo",
+    "desc": "Logo animation for Juan Horse",
+    "thumb": "art/art3.png",
+    "video": "art/art2.mp4",
+    "tag": "Motion Graphics"
+  },
+  {
+    "type": "motion",
+    "title": "67 Video",
+    "desc": "Horror 67 game for mobile app",
+    "thumb": "art/art5.jpg",
+    "video": "art/art2.mp4",
+    "tag": "Motion Graphics"
+  },
+  {
+    "type": "motion",
+    "title": "Anything",
+    "desc": "Opening titles for documentary series",
+    "thumb": "art/art3.png",
+    "video": "art/art.mp4",
+    "tag": "Motion Graphics"
+  }
+]
