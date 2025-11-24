@@ -1,6 +1,12 @@
 # MetcHi Portfolio
 
 ![Page Visits](https://visitor-badge.laobi.icu/badge?page_id=metch1.metch1)
+![Twitter Follow](https://img.shields.io/twitter/follow/mettchi?style=social)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![GitHub stars](https://img.shields.io/github/stars/metch1/metch1.github.io?style=social)
 
 Welcome to my professional repository. This repository contains the full source code, designs, graphics, images, videos, and other assets used in my personal portfolio website.
 
