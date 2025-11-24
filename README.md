@@ -30,3 +30,12 @@ For inquiries, contact: **metchi.service@gmail.com**
 
 - This repository is meant to showcase my professional work and is protected under copyright law.  
 - Any unauthorized use of the content may result in legal action.  
+
+---
+
+# TO DO 
+
+- Convert all images to WebP for faster loading
+- Compress videos for faster page load without losing quality
+- Lazy-load images and videos for better performance
+- Add favicon for browser tab
