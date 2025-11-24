@@ -47,3 +47,4 @@ For inquiries, contact: **metchi.service@gmail.com**
 - Compress videos for faster page load without losing quality
 - Lazy-load images and videos for better performance
 - Add favicon for browser tab
+- Mobile platform support (better style)
