@@ -1,5 +1,7 @@
 # MetcHi Portfolio
 
+![Page Visits](https://visitor-badge.laobi.icu/badge?page_id=metch1.metch1)
+
 Welcome to my professional repository. This repository contains the full source code, designs, graphics, images, videos, and other assets used in my personal portfolio website.
 
 ## About
