@@ -62,9 +62,9 @@ body {
     font-weight: 600;
     position: relative;
 }
-
+/*
 .logo::before {
-    content: ''; /* the line six sevennnnnnnnnn */
+    content: ''; /* the line six sevennnnnnnnnn 
     position: absolute;
     top: 0;
     right: 0;
@@ -73,7 +73,7 @@ body {
     background: var(--secondary-color);
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
-}
+} */
 
 .navbar {
     display: flex;
@@ -92,7 +92,7 @@ body {
 .navbar a:hover, .navbar a.active {
     color: var(--primary-color);
 }
-
+/*
 .navbar a::after {
     content: '';
     position: absolute;
@@ -103,7 +103,7 @@ body {
     background: var(--primary-color);
     transition: var(--transition);
 }
-
+*/
 .navbar a:hover::after, .navbar a.active::after {
     width: 100%;
 }
@@ -159,7 +159,7 @@ lue-blur-overlay {
     line-height: 1.2;
     margin-bottom: 10px;
 }
-
+/*
 .home-content h1::before {
     content: '';
     position: absolute;
@@ -171,7 +171,7 @@ lue-blur-overlay {
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
-
+*/
 .home-content h3 {
     position: relative;
     font-size: 32px;
@@ -179,7 +179,7 @@ lue-blur-overlay {
     color: var(--primary-color);
     margin-bottom: 20px;
 }
-
+/*
 .home-content h3::before {
     content: '';
     position: absolute;
@@ -191,14 +191,14 @@ lue-blur-overlay {
     animation: showRight 1s ease forwards;
     animation-delay: 1.3s;
 }
-
+*/
 .home-content p {
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
     line-height: 1.6;
 }
-
+/*
 .home-content p::before {
     content: '';
     position: absolute;
@@ -210,7 +210,7 @@ lue-blur-overlay {
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 } 
-
+*/
 .btn-box {
     position: relative;
     display: flex;
@@ -219,7 +219,7 @@ lue-blur-overlay {
     max-width: 350px;
     height: 50px;
 }
-
+/*
 .btn-box::before {
     content: '';
     position: absolute;
@@ -232,7 +232,7 @@ lue-blur-overlay {
     animation-delay: 1.9s;
     z-index: 2;
 }
-
+*/
 .btn-primary, .btn-secondary {
     position: relative;
     display: inline-flex;
@@ -295,7 +295,7 @@ lue-blur-overlay {
     justify-content: space-between;
     z-index: 2;
 }
-
+/*
 .home-sci::before {
     content: '';
     position: absolute;
@@ -308,7 +308,7 @@ lue-blur-overlay {
     animation-delay: 2.5s;
     z-index: 2;
 }
-
+*/
 .home-sci a {
     position: relative;
     display: inline-flex;
