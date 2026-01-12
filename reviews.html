@@ -5,113 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>MetcHI | Portfolio</title>
     <meta name="description" content="Showcasing my design and video editing work">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MetcHI | Portfolio">
+    <meta property="og:description" content="A collection of my clients reviews">
     <meta property="og:image" content="https://imgur.com/a/Q3b86jo">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/portfolio.css">
     <link rel="stylesheet" href="CSS/review_remake.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">MetcHi</a>
 
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#services">Services</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
+<header class="header">
+    <a href="index.html" class="logo">MetcHi</a>
 
-        <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main class="tempthing">
+
+    <!-- HERO -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>My Rate</h1>
+            <p>A collection of my clients reviews</p>
         </div>
-    </header>
-
-    <section class="tempthing">
-        <section class="portfolio-hero">
-            <div class="container">
-                <h1>My Rate</h1>
-                <p>A collection of my clients reviews</p>
-            </div>
-        </section>
-
-
-        <section class="portfolio-rev">
-
-            <div class="review-container">
-
-                <div class="review-card">
-                    <img src="art/PFPS/metchi_pfp.jpg" alt="Devoleper" class="review-pfp">
-                    <div class="review-content">
-                        <div class="review-meta">
-                            <span class="review-author">MetcHi - DEV</span>
-                            <p class="review-text text-top">This will be updated and made better soon, reviewers media
-                                will be included in the comments, and the reviews will be more detailed. Stay tuned!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <img src="art/pfps/blizz.png" alt="User" class="review-pfp">
-                    <div class="review-content">
-                        <div class="review-meta">
-                            <span class="review-author">Blizz</span>
-                            <p class="review-text text-top">My name is Blizz. I’m a YouTuber who has interviewed major
-                                Brawl Stars creators like Yde, Eqwaak, and others. I’ve worked with many designers in
-                                the past, but I never got the results I was truly looking for until I found Metchi. He
-                                immediately delivered exactly the style of thumbnails I had been searching for all this
-                                time. After working with around seven designers before, I can confidently say I won’t be
-                                switching to anyone else. I’m really thankful to Metchi for being my designer!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <img src="art/PFPS/med.png" alt="User" class="review-pfp">
-                    <div class="review-content">
-                        <div class="review-meta">
-                            <span class="review-author">Med.</span>
-                            <p class="review-text text-top">Great service this guy is doing . Premium high quality, fast
-                                service. All what you need.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="review-card">
-                    <img src="art/PFPS/uchenna.png" alt="User" class="review-pfp">
-                    <div class="review-content">
-                        <div class="review-meta">
-                            <span class="review-author">Uchenna</span>
-                            <p class="review-text text-top">
-                                Metchi thumbnails are SO GOOD AND AMAZING HE IS THE BEST!!</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </section>
-
-
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 MetcHi. All rights reserved.</p>
+    <!-- REVIEWS -->
+    <section class="portfolio-rev">
+        <div class="review-container">
+            <!-- Reviews loaded from reviews.json -->
         </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-    <script src="portfolio.js"></script>
-    <script src="prevent.js"></script>
+    <!-- LEAVE REVIEW -->
+    <section class="leave-thought">
+        <h2>Leave a Review</h2>
+
+        <form id="reviewForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your name (not the real)"
+                required
+            >
+
+            <input
+                type="url"
+                id="avatar"
+                placeholder="Avatar URL (optional)"
+                value="https://imgur.com/3Cg3Rrp"
+            >
+
+            <textarea
+                id="message"
+                placeholder="Write your review..."
+                required
+            ></textarea>
+
+            <button type="submit">Send Review</button>
+        </form>
+
+        <p id="status"></p>
+    </section>
+
+    <!-- REVIEW POPUP -->
+    <div class="review-popup" id="reviewPopup">
+        <div class="popup-card">
+            <button class="popup-close">&times;</button>
+
+            <img id="popupPfp" src="" alt="">
+            <h3 id="popupName"></h3>
+            <p id="popupBio"></p>
+
+            <div class="popup-socials" id="popupSocials"></div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 MetcHi. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="portfolio.js"></script>
+<script src="prevent.js"></script>
+<script src="cloudflare_worker.js"></script>
+<script src="reviews-popup.js"></script>
+<script src="reviews.js"></script>
+
 </body>
-
 </html>
