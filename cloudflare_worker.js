@@ -1,6 +1,6 @@
 const form = document.getElementById("reviewForm");
 const statusText = document.getElementById("status");
-const LIMIT_HOURS = 0;
+const LIMIT_HOURS = 6;
 const STORAGE_KEY = "lastReviewTime";
 
 function canSubmit() {
