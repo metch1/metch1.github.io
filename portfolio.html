@@ -1,15 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Basic -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>MetcHI | Portfolio</title>
-    <meta name="description" content="Showcasing my design and video editing work">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Explore MetcHI’s portfolio featuring graphic design, thumbnails, video editing projects, and creative visual work.">
+    <meta name="author" content="MetcHI">
+    <link rel="canonical" href="https://metch1.github.io/portfolio.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MetcHI Portfolio">
+    <meta property="og:title" content="MetcHI | Portfolio">
+    <meta property="og:description" content="A curated selection of MetcHI’s design and video editing work.">
+    <meta property="og:url" content="https://metch1.github.io/portfolio.html">
+    <meta property="og:image" content="https://i.imgur.com/hyeVGcF.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MetcHI portfolio preview – design and video editing projects">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MetcHI | Portfolio">
+    <meta name="twitter:description" content="Graphic design and video editing projects by MetcHI.">
+    <meta name="twitter:image" content="https://i.imgur.com/hyeVGcF.png">
+    <meta name="twitter:site" content="@mettchi">
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Styles -->
+    <link rel="preload" href="CSS/style.css" as="style">
     <link rel="stylesheet" href="CSS/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preload" href="CSS/portfolio.css" as="style">
     <link rel="stylesheet" href="CSS/portfolio.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#00abf0">
+
+    <!-- Structured Data (WebPage) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "MetcHI Portfolio",
+        "url": "https://metch1.github.io/portfolio.html",
+        "description": "Portfolio page showcasing MetcHI’s design and video editing work.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "MetcHI Portfolio",
+            "url": "https://metch1.github.io/"
+        }
+    }
+    </script>
+
+    <script>
+        fetch('gallery.json')
+            .then(res => res.json())
+            .then(data => {
+                const itemList = data.map((item, index) => {
+                    if (item.type === 'video') {
+                        return {
+                            "@type": "ListItem",
+                            "position": index + 1,
+                            "url": "https://metch1.github.io/" + item.video,
+                            "name": item.title,
+                            "description": item.desc,
+                            "image": "https://metch1.github.io/" + item.thumb,
+                            "item": {
+                                "@type": "VideoObject",
+                                "name": item.title,
+                                "description": item.desc,
+                                "thumbnailUrl": "https://metch1.github.io/" + item.thumb,
+                                "contentUrl": "https://metch1.github.io/" + item.video
+                            }
+                        };
+                    } else {
+                        return {
+                            "@type": "ListItem",
+                            "position": index + 1,
+                            "url": "https://metch1.github.io/" + item.thumb,
+                            "name": item.title,
+                            "description": item.desc,
+                            "image": "https://metch1.github.io/" + item.thumb
+                        };
+                    }
+                });
+
+                const ld = {
+                    "@context": "https://schema.org",
+                    "@type": "ItemList",
+                    "name": "MetcHI Portfolio",
+                    "url": "https://metch1.github.io/portfolio.html",
+                    "itemListElement": itemList
+                };
+
+                const script = document.createElement('script');
+                script.type = 'application/ld+json';
+                script.text = JSON.stringify(ld);
+                document.head.appendChild(script);
+            })
+            .catch(err => console.error("Failed to generate JSON-LD:", err));
+    </script>
+
 </head>
+
 <body>
     <header class="header">
         <a href="index.html" class="logo">MetcHi</a>
@@ -21,7 +125,7 @@
             <a href="reviews.html" class="active">Reviews</a>
             <a href="index.html#contact">Contact</a>
         </nav>
-        
+
         <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -67,4 +171,5 @@
     <script src="portfolio.js"></script>
     <script src="prevent.js"></script>
 </body>
+
 </html>

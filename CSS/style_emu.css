@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --transparent-color: rgba(8, 27, 41, 0);
-    --primary-color: #00abf0;
-    --secondary-color: #081b29;
-    --text-color: #ededed;
-    --accent-color: #0ef;
-    --card-bg: rgba(255, 255, 255, 0.05);
+    /* --- Pink Light Mode Variables (GUMI / Megurine Luka Theme) --- */
+    --transparent-color: rgba(26, 8, 41, 0); /* Darker base for pink theme */
+    --primary-color: #FF66B2;              /* Vibrant pink */
+    --secondary-color: #1A0829;            /* Dark purple/pink base */
+    --text-color: #FFF0FA;                 /* Light pink/white for contrast */
+    --accent-color: #ff99cc;               /* Lighter pink accent */
+    --card-bg: rgba(255, 255, 255, 0.05);  /* Keep card bg subtle */
     --transition: all 0.3s ease;
-    --gradient-color: linear-gradient(rgba(8, 27, 41, 0.8), rgba(8, 27, 41, 0.8));
+    --gradient-color: linear-gradient(rgba(26, 8, 41, 0.8), rgba(26, 8, 41, 0.8)); /* Adjusted gradient base */
 }
 
 /* Reset and Base Styles */
@@ -57,7 +58,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: rgba(8, 27, 41, 0.2);
+    background: rgba(26, 8, 41, 0.2); /* Adjusted for pink theme */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +122,8 @@ body {
 /* Home Section */
 .home {
     height: 100vh;
-    background: linear-gradient(rgba(8, 27, 41, 0.8), rgb(8, 27, 41)), url('miku3.webp') no-repeat;
+    /* Updated background image path and gradient colors for pink theme */
+    background: linear-gradient(rgba(26, 8, 41, 0.8), rgb(26, 8, 41)), url('emu_1.png') no-repeat; /* Using provided image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -133,16 +135,18 @@ body {
 }
 
 /*
-.blue-blur-overlay {
+.blue-blur-overlay { 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 171, 240, 0.2) 0%, rgba(8, 27, 41, 0.7) 100%);
+
+    background: linear-gradient(135deg, rgba(255, 2, 95, 0.2) 0%, rgba(41, 8, 13, 0.7) 100%);
     backdrop-filter: blur(2px);
     z-index: 1;
-} */
+}
+*/
 
 .home-content {
     max-width: 600px;
@@ -161,7 +165,7 @@ body {
     position: relative;
     font-size: 32px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Now uses the pink color */
     margin-bottom: 20px;
 }
 
@@ -188,11 +192,11 @@ body {
     align-items: center;
     padding: 0 25px;
     height: 100%;
-    background: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background: var(--primary-color); /* Pink button background */
+    border: 2px solid var(--primary-color); /* Pink border */
     border-radius: 8px;
     font-size: 18px;
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Dark text on pink button */
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -204,15 +208,15 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink text on transparent button */
 }
 
 .btn-primary:hover, .btn-secondary:hover {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Hover text color */
 }
 
 .btn-secondary:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Hover text color for secondary */
 }
 
 .btn-primary::before, .btn-secondary::before {
@@ -222,13 +226,13 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--secondary-color);
+    background: var(--secondary-color); /* Dark hover fill */
     z-index: -1;
     transition: var(--transition);
 }
 
 .btn-secondary::before {
-    background: var(--primary-color);
+    background: var(--primary-color); /* Pink hover fill for secondary */
 }
 
 .btn-primary:hover::before, .btn-secondary:hover::before {
@@ -252,10 +256,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--primary-color); /* Pink border */
     border-radius: 50%;
     font-size: 20px;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink icon */
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -263,7 +267,7 @@ body {
 }
 
 .home-sci a:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Dark icon on hover */
 }
 
 .home-sci a::before {
@@ -273,7 +277,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--primary-color);
+    background: var(--primary-color); /* Pink hover fill */
     z-index: -1;
     transition: var(--transition);
 }
@@ -326,7 +330,7 @@ section {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: var(--primary-color);
+    background: var(--primary-color); /* Pink underline */
 }
 
 /* About Section */
@@ -340,7 +344,7 @@ section {
 .about-text h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink heading */
 }
 
 .about-text p {
@@ -371,11 +375,12 @@ section {
 
 .skill-progress {
     height: 100%;
-    background: var(--primary-color);
+    background: var(--primary-color); /* Pink skill bar */
     border-radius: 5px;
     width: 0;
     transition: width 2.5s ease;
-    box-shadow: 10 10 120px var(--primary-color); /* try ts */
+    /* Box shadow color updated */
+    box-shadow: 10 10 120px var(--primary-color);
 }
 
 /* About Image Section */
@@ -390,8 +395,9 @@ section {
     height: 260px; /* u can edit pfp size here */
     border-radius: 20px; /* or 50% for circle, less for smoth edges, 20px prefered */
     object-fit: cover;
-    box-shadow: 0 0 25px rgba(0, 170, 255, 0.35);
-    border: 3px solid rgba(0, 170, 255, 0.7);
+    /* Glow/shadow updated for pink theme */
+    box-shadow: 0 0 25px rgba(255, 102, 178, 0.35); /* Using primary color */
+    border: 3px solid rgba(255, 102, 178, 0.7); /* Using primary color */
 }
 
 .image-placeholder {
@@ -403,8 +409,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px dashed var(--primary-color);
-    color: var(--primary-color);
+    border: 2px dashed var(--primary-color); /* Pink dashed border */
+    color: var(--primary-color); /* Pink text */
 }
 
 .image-placeholder i {
@@ -435,13 +441,14 @@ section {
 
 .skill-read-card:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: 0 10px 25px rgba(0, 170, 255, 0.3);
+    border-color: var(--primary-color); /* Pink border on hover */
+    /* Box shadow updated for pink theme */
+    box-shadow: 0 10px 25px rgba(255, 102, 178, 0.3); /* Using primary color */
 }
 
 .skill-card-info {
     font-size: 32px;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink number */
     margin-bottom: 10px;
     font-weight: 700;
     display: block;
@@ -483,7 +490,8 @@ section {
 
 /* Services Section */
 .services {
-    background: linear-gradient(rgb(8, 27, 41), rgba(8, 27, 41, 0.8), rgb(8, 27, 41)), url('miku1.webp') no-repeat center top;
+    /* Updated background image path and gradient colors for pink theme */
+    background: linear-gradient(rgb(26, 8, 41), rgba(26, 8, 41, 0.8), rgb(26, 8, 41)), url('emu_2.png') no-repeat center top; /* Using provided image */
 }
 
 .services-grid {
@@ -496,7 +504,8 @@ section {
     background: var(--card-bg);
     backdrop-filter: blur(5px);
     padding: 30px;
-    box-shadow: 0 0 25px rgba(6, 28, 39, 0.452);
+    /* Box shadow updated for pink theme */
+    box-shadow: 0 0 25px rgba(66, 2, 13, 0.452); /* Keeping similar relative shadow */
     border-radius: 10px;
   /*  background-color: #081b29; 
     mix-blend-mode: lighten; */
@@ -507,12 +516,12 @@ section {
 
 .service-card:hover {
     transform: translateY(-10px);
-    border-color: var(--primary-color);
+    border-color: var(--primary-color); /* Pink border on hover */
 }
 
 .service-card i {
     font-size: 50px;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink icon */
     margin-bottom: 20px;
 }
 
@@ -543,7 +552,7 @@ section {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink checkmark */
     font-weight: bold;
     font-size: 16px;
 }
@@ -567,7 +576,7 @@ section {
     content: '+';
     position: absolute;
     left: 0;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink plus sign */
     font-weight: bold;
 }
 
@@ -581,7 +590,7 @@ section {
 .contact-info h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink heading */
 }
 
 .contact-info p {
@@ -607,7 +616,7 @@ section {
 
 .contact-item i {
     font-size: 24px;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink icon */
     margin-right: 15px;
     width: 30px;
     text-align: center;
@@ -648,7 +657,7 @@ section {
     padding: 25px 20px 10px 60px;
     background: transparent;
     border: none;
-    color: var(--text-color);
+    color: var(--text-color); /* Light text color */
     font-size: 16px;
     transition: var(--transition);
     font-family: 'Poppins', sans-serif;
@@ -666,7 +675,7 @@ section {
     left: 25px;
     top: 50%;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6); /* Subtle icon color */
     font-size: 20px;
     transition: var(--transition);
     z-index: 2;
@@ -682,7 +691,7 @@ section {
     top: 50%;
     left: 60px;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6); /* Subtle label color */
     font-size: 16px;
     pointer-events: none;
     transition: var(--transition);
@@ -706,7 +715,7 @@ section {
 
 .form-group input:focus ~ i,
 .form-group textarea:focus ~ i {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink icon on focus */
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -720,7 +729,7 @@ section {
 .form-group textarea:not(:placeholder-shown) + label {
     top: 15px;
     font-size: 12px;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Pink label on focus/not empty */
     transform: none;
     font-weight: 500;
 }
@@ -741,7 +750,8 @@ section {
 /* Footer */
 .footer {
     /*background: rgba(0, 0, 0, 0.3); */
-    background: linear-gradient(rgba(8, 27, 41, 0.8), rgba(8, 27, 41, 0.8)), url('miku3.webp') no-repeat;
+    /* Updated background image path and gradient colors for pink theme */
+    background: linear-gradient(rgba(26, 8, 41, 0.8), rgba(26, 8, 41, 0.8)), url('emu_1.png') no-repeat; /* Using provided image */
     background-position: top;
     padding: 30px 0;
     text-align: center;
@@ -796,7 +806,7 @@ section {
         right: -100%;
         width: 80%;
         height: calc(100vh - 70px);
-        background: var(--secondary-color);
+        background: var(--secondary-color); /* Dark nav background */
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
