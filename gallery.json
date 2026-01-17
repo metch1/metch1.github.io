@@ -286,5 +286,13 @@
     "thumb": "art/video_art.png",
     "video": "art/WEBM/V1_VIDEO013.webm",
     "tag": "Video Editing"
+  },
+  {
+    "type": "video",
+    "title": "VIdeo Edit",
+    "desc": "VIDEO FOR MY PORTFOLIO",
+    "thumb": "art/video_art.png",
+    "video": "art/peek.mp4",
+    "tag": "new feature wip"
   }
 ]
