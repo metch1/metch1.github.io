@@ -21,19 +21,20 @@ document.addEventListener("click", (e) => {
     let iconClass = "";
 
     switch(platform.toLowerCase()) {
-      case "instagram": iconClass = "bxl-instagram"; break;
-      case "tiktok": iconClass = "bxl-tiktok"; break;
-      case "youtube": iconClass = "bxl-youtube"; break;
-      case "linkedin": iconClass = "bxl-linkedin"; break;
-      case "twitter": iconClass = "bxl-twitter"; break;
-      case "discord": iconClass = "bxl-discord"; break;
-      case "carrd": iconClass = "bxs-credit-card-front"; break;
-      default: iconClass = "bxs-link"; // fallback for unknown
+      case "instagram": iconClass = "bx bxl-instagram"; break;
+      case "tiktok": iconClass = "bx bxl-tiktok"; break;
+      case "youtube": iconClass = "bx bxl-youtube"; break;
+      case "linkedin": iconClass = "bx bxl-linkedin"; break;
+      case "twitter": iconClass = "bx bxl-twitter"; break;
+      case "discord": iconClass = "bx bxl-discord"; break;
+      case "carrd": iconClass = "bx bxs-credit-card-front"; break;
+      case "behance": iconClass = "bx bxl-behance"; break;
+      default: iconClass = "bx bxl-link"; // fallback for unknown
     }
 
     popupSocials.innerHTML += `
       <a href="${link}" target="_blank" class="popup-social-link">
-        <i class='bx ${iconClass}'></i>
+        <i class='${iconClass}'></i>
       </a>
     `;
   }
