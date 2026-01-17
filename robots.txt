@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://metch1.github.io/sitemap.xml
+Sitemap: https://metch1.github.io/sitemap-images.xml

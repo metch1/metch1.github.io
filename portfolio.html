@@ -63,55 +63,6 @@
     }
     </script>
 
-    <script>
-        fetch('gallery.json')
-            .then(res => res.json())
-            .then(data => {
-                const itemList = data.map((item, index) => {
-                    if (item.type === 'video') {
-                        return {
-                            "@type": "ListItem",
-                            "position": index + 1,
-                            "url": "https://metch1.github.io/" + item.video,
-                            "name": item.title,
-                            "description": item.desc,
-                            "image": "https://metch1.github.io/" + item.thumb,
-                            "item": {
-                                "@type": "VideoObject",
-                                "name": item.title,
-                                "description": item.desc,
-                                "thumbnailUrl": "https://metch1.github.io/" + item.thumb,
-                                "contentUrl": "https://metch1.github.io/" + item.video
-                            }
-                        };
-                    } else {
-                        return {
-                            "@type": "ListItem",
-                            "position": index + 1,
-                            "url": "https://metch1.github.io/" + item.thumb,
-                            "name": item.title,
-                            "description": item.desc,
-                            "image": "https://metch1.github.io/" + item.thumb
-                        };
-                    }
-                });
-
-                const ld = {
-                    "@context": "https://schema.org",
-                    "@type": "ItemList",
-                    "name": "MetcHI Portfolio",
-                    "url": "https://metch1.github.io/portfolio.html",
-                    "itemListElement": itemList
-                };
-
-                const script = document.createElement('script');
-                script.type = 'application/ld+json';
-                script.text = JSON.stringify(ld);
-                document.head.appendChild(script);
-            })
-            .catch(err => console.error("Failed to generate JSON-LD:", err));
-    </script>
-
 </head>
 
 <body>
@@ -162,107 +113,107 @@
             <noscript>
                 <div class="gallery-grid">
                     <figure>
-                        <img src="art/WEB/V1_ART_001.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_001.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_002.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_002.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_003.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_003.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_004.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_004.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_005.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_005.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_006.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_006.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_007.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_007.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_008.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_008.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_009.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_009.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_010.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_010.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_011.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_011.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_012.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_012.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_013.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_013.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_014.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_014.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_015.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_015.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_016.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_016.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_017.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_017.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_018.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_018.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_019.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_019.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_020.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_020.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_021.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_021.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_022.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_022.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_023.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_023.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_024.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_024.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_025.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_025.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                     <figure>
-                        <img src="art/WEB/V1_ART_026.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy">
+                        <img src="art/WEB/V1_ART_026.webp" alt="Brawl Stars thumbnail design by MetcHI" loading="lazy" width="1280" height="720">
                         <figcaption>Brawl Stars thumbnail design – created by MetcHI</figcaption>
                     </figure>
                 </div>
