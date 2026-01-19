@@ -1,45 +1,42 @@
-const form = document.getElementById("reviewForm");
-const statusText = document.getElementById("status");
-const LIMIT_HOURS = 6;
-const STORAGE_KEY = "lastReviewTime";
+const f = document.getElementById("reviewForm");
+const s = document.getElementById("status");
+const H = 6 * 36e5, K = "lastReviewTime", T = "t";
 
-function canSubmit() {
-  const last = localStorage.getItem(STORAGE_KEY);
-  if (!last) return true;
-  const lastTime = parseInt(last, 10);
-  const now = Date.now();
-  return now - lastTime >= LIMIT_HOURS * 60 * 60 * 1000;
-}
+sessionStorage[T] ||= Date.now();
 
-form.addEventListener("submit", async (e) => {
+const ok = () => !localStorage[K] || Date.now() - localStorage[K] >= H;
+
+f.addEventListener("submit", async e => {
   e.preventDefault();
 
-  if (!canSubmit()) {
-    statusText.textContent = "You can submit again after 6 hours ⏳";
-    return;
-  }
+  if (Date.now() - sessionStorage[T] < 3e3)
+    return s.textContent = "Wait a moment ⏳";
 
-  const name = document.getElementById("name").value.trim();
-  const message = document.getElementById("message").value.trim();
-  const avatarUrl = document.getElementById("avatar").value.trim();
+  if (!ok())
+    return s.textContent = "Try again later ⏳";
 
-  statusText.textContent = "Sending...";
+  const name = f.name.value.trim();
+  const message = f.message.value.trim();
+  const avatarUrl = f.avatar.value.trim();
+
+  if (name.length < 2 || message.length < 5)
+    return s.textContent = "Fill the form properly.";
+
+  s.textContent = "Sending...";
 
   try {
-    const res = await fetch("https://comment.zaki76785.workers.dev", {
+    const r = await fetch("https://comment.zaki76785.workers.dev", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, message, avatarUrl })
     });
 
-    if (res.ok) {
-      statusText.textContent = "Thanks for your review 💙";
-      form.reset();
-      localStorage.setItem(STORAGE_KEY, Date.now());
-    } else {
-      statusText.textContent = "Something went wrong.";
-    }
+    if (!r.ok) throw 0;
+
+    s.textContent = "Thanks 💙";
+    f.reset();
+    localStorage[K] = Date.now();
   } catch {
-    statusText.textContent = "Network error.";
+    s.textContent = "Error.";
   }
 });
