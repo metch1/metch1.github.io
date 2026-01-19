@@ -9,6 +9,21 @@
     --gradient-color: linear-gradient(rgba(8, 27, 41, 0.8), rgba(8, 27, 41, 0.8));
 }
 
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 /* it's useless but i saved it here for quick access */
 
 .portfolio-rev {

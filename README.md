@@ -38,6 +38,12 @@ For inquiries, contact: **metchi.service@gmail.com**
 
 - This repository is meant to showcase my professional work and is protected under copyright law.  
 - Any unauthorized use of the content may result in legal action.  
+- Please respect my work and do not misuse the content
+- JavaScript used here was done by AI, i'm not js expert (just in case people start yapping about it)
+- All the HTML and CSS code is written by me
+- All the images and videos are created by me
+- All the designs are created by me
+- All the content right belongs to me
 
 ---
 
@@ -48,3 +54,4 @@ For inquiries, contact: **metchi.service@gmail.com**
 - Lazy-load images and videos for better performance
 - Add favicon for browser tab
 - Mobile platform support (better style)
+
