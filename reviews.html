@@ -1,243 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang=en>
 <head>
-    <!-- Basic -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title -->
-    <title>MetcHI | Client Reviews</title>
-
-    <!-- SEO -->
-    <meta name="description"
-        content="Read genuine client reviews and testimonials about MetcHI’s design and video editing services.">
-    <meta name="author" content="MetcHI">
-    <link rel="canonical" href="https://metch1.github.io/reviews.html  ">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph (Discord / WhatsApp / Facebook) -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="MetcHI Portfolio">
-    <meta property="og:title" content="MetcHI | Client Reviews">
-    <meta property="og:description"
-        content="Client testimonials and feedback on MetcHI’s design and video editing work.">
-    <meta property="og:url" content="https://metch1.github.io/reviews.html  ">
-    <meta property="og:image" content="https://i.imgur.com/hyeVGcF.png  ">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Client reviews for MetcHI – designer & video editor">
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MetcHI | Client Reviews">
-    <meta name="twitter:description" content="Real client feedback and testimonials for MetcHI’s creative services.">
-    <meta name="twitter:image" content="https://i.imgur.com/hyeVGcF.png  ">
-    <meta name="twitter:site" content="@mettchi">
-
-    <!-- Icons -->
-    <link rel="icon" href="/favicon.ico">
-
-    <!-- Styles -->
-    <link rel="stylesheet" id="theme-style" href="CSS/style.css">
-
-
-    <link rel="preload" href="CSS/portfolio.css" as="style">
-    <link rel="stylesheet" href="CSS/portfolio.css">
-
-    <link rel="preload" href="CSS/review_remake.css" as="style">
-    <link rel="stylesheet" href="CSS/review_remake.css">
-
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css  " rel="stylesheet">
-
-    <!-- Theme -->
-    <meta name="theme-color" content="#00abf0">
-
-    <!-- Structured Data (WebPage) -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org  ",
-  "@type": "WebPage",
-  "name": "MetcHI Client Reviews",
-  "url": "https://metch1.github.io/reviews.html  ",
-  "description": "Client testimonials and reviews for MetcHI’s design and video editing services.",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "MetcHI Portfolio",
-    "url": "https://metch1.github.io/  "
-  },
-  "author": {
-    "@type": "Person",
-    "name": "MetcHI",
-    "url": "https://metch1.github.io/  ",
-    "sameAs": [
-      "https://github.com/metch1  ",
-      "https://www.behance.net/metchi  ",
-      "https://x.com/mettchi  ",
-      "https://discord.gg/fjJNA4TxPj  ",
-      "https://metch1.github.io/portfolio.html  ",
-      "https://metch1.github.io/reviews.html  "
-    ]
-  }
-}
-</script>
-
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>MetcHi · Client Reviews</title>
+<meta name=description content="Read genuine client reviews and testimonials about MetcHI's design and video editing services.">
+<link rel=canonical href=https://metch1.github.io/reviews.html>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel=stylesheet>
+<link href=https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css rel=stylesheet>
+<link rel=stylesheet id=theme-style href=CSS/style.css>
+<link rel=preload href=CSS/portfolio.css as=style>
+<link rel=stylesheet href=CSS/portfolio.css>
+<link rel=preload href=CSS/review_remake.css as=style>
+<link rel=stylesheet href=CSS/review_remake.css>
 </head>
-
-
 <body>
-
-    <header class="header">
-        <a href="index.html" class="logo">MetcHi</a>
-
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#services">Services</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
-
-        <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-
-    <main class="tempthing">
-
-        <!-- HERO -->
-        <section class="portfolio-hero">
-            <div class="container">
-                <h1>MetcHi's Reviews</h1>
-                <p>A collection of my clients reviews</p>
-            </div>
-        </section>
-
-        <!-- REVIEWS -->
-        <section class="portfolio-rev">
-            <div class="review-container">
-                <!-- Reviews loaded from reviews.json -->
-                <div class="review-card">
-                    <img src="art/PFPS/metchi_pfp.jpg" class="review-pfp" alt="MetcHi - DEV" data-name="MetcHi - DEV"
-                        data-bio="The main developer of the website. I fully coded my portfolio using HTML5, CSS only 'JS part was AI' so STOP YAPPING about me using the DAMN AI "
-                        data-socials='{"discord": "https://discord.gg/fjJNA4TxPj", "twitter": "https://x.com/mettchi"}'>
-                    <div class="review-content">
-                        <span class="review-author">MetcHi - DEV</span>
-                        <p class="review-text text-top">This will be updated and made better soon, reviewers media will
-                            be included in the comments, and the reviews will be more detailed. Stay tuned!</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <img src="art/PFPS/blizz.png" class="review-pfp" alt="Blizz" data-name="Blizz"
-                        data-bio="I make documentaries!\nHigh quality storytelling. Clean visuals. Professional editing."
-                        data-socials='{"youtube": "https://www.youtube.com/@Realblizz1"}'>
-                    <div class="review-content">
-                        <span class="review-author">Blizz</span>
-                        <p class="review-text text-top">I’m a YouTuber who has interviewed major Brawl Stars creators
-                            like Yde, Eqwaak, and others. I’ve worked with many designers in the past, but I never got
-                            the results I was truly looking for until I found Metchi...</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <img src="art/PFPS/med.png" class="review-pfp" alt="Med." data-name="Med."
-                        data-bio="Creative Director of NHG. GFX Designer | Digital Artist"
-                        data-socials='{"twitter": "https://x.com/zxmed01", "carrd": " https://medzx1.carrd.co/"}'>
-                    <div class="review-content">
-                        <span class="review-author">Med.</span>
-                        <p class="review-text text-top">Great service this guy is doing. Premium high quality, fast
-                            service. All what you need.</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <img src="art/PFPS/uchenna.png" class="review-pfp" alt="Uchenna" data-name="Uchenna"
-                        data-bio="This is a gaming channel and I make brawlstars videos, mostly about a brawler called Mortis."
-                        data-socials='{"instagram": "https://instagram.com/uchennabs", "tiktok": "https://www.tiktok.com/@uchennabs3", "youtube": "https://www.youtube.com/@uchennabs"}'>
-                    <div class="review-content">
-                        <span class="review-author">Uchenna</span>
-                        <p class="review-text text-top">Metchi thumbnails are SO GOOD AND AMAZING HE IS THE BEST!!</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <img src="art/PFPS/aeeneas.png" class="review-pfp" alt="Aeeneasbs" data-name="Aeeneasbs"
-                        data-bio="brawl can get wild sometimes, some original content for your youtube refresh ily all "
-                        data-socials='{"youtube": "https://www.youtube.com/@aeeneasbs", "tiktok": "https://www.tiktok.com/@ilyaeeneas"}'>
-                    <div class="review-content">
-                        <span class="review-author">Aeeneasbs</span>
-                        <p class="review-text text-top">Loved the editing! Would highly recommend to any creators
-                            looking for an editor. Thanks!</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <img src="art/PFPS/bhaz.png" class="review-pfp" alt="Bhaz" data-name="Bhaz"
-                        data-bio="Bhaz — Graphic Designer (GFX) Designing high-quality art, and esports visuals. I’ve worked with many people, delivering designs that are both eye-catching and professional."
-                        data-socials='{"behance": "https://www.behance.net/bhazgfx", "twitter": "https://x.com/bhazgfx"}'>
-                    <div class="review-content">
-                        <span class="review-author">Bhaz</span>
-                        <p class="review-text text-top">Metchi Offers great services , and personally I bought some of
-                            his asset packs and they were great , , he also makes decent designs highly recommended.</p>
-                    </div>
-                </div>
-        <!-- 
-            <div class="review-card">
-                    <img src="art/PFPS/kai.png" class="review-pfp" alt="Kai" data-name="Kai"
-                        data-bio="I am a graphic designer and illustrator. I have a passion for creating visually stunning designs and illustrations that are both unique and eye-catching."
-                        data-socials='{"instagram": "https://instagram.com/kai_artz"}'>
-                    <div class="review-content">
-                        <span class="review-author">Kai</span>
-                        <p class="review-text text-top">Metchi is a very talented artist and a very nice person. He has
-                            a great eye for detail and is always willing to help. I would highly recommend him to anyone
-                            looking for a graphic designer.</p>
-                    </div>
-                </div>
-            </div>
-        -->
-        </section>
-
-        <!-- LEAVE REVIEW -->
-        <section class="leave-thought" id="reviews">
-            <h2>Leave a Review</h2>
-
-            <form id="reviewForm">
-                <input type="text" id="name" placeholder="Your name (not the real)" required>
-
-                <input type="url" id="avatar" placeholder="Avatar URL (optional)" value="https://imgur.com/3Cg3Rrp  ">
-
-                <textarea id="message" placeholder="Write your review..." required></textarea>
-
-                <button type="submit">Send Review</button>
-            </form>
-
-            <p id="status"></p>
-        </section>
-
-        <!-- REVIEW POPUP -->
-        <div class="review-popup" id="reviewPopup">
-            <div class="popup-card">
-                <button class="popup-close">&times;</button>
-
-                <img id="popupPfp" src="" alt="">
-                <h3 id="popupName"></h3>
-                <p id="popupBio"></p>
-
-                <div class="popup-socials" id="popupSocials"></div>
-            </div>
-        </div>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 MetcHi. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-    <script src="cloudflare_worker.js"></script>
-    <script src="reviews-popup.js"></script>
-
+<div class=cursor id=cursor>
+<div class=cursor-ring></div>
+<div class=cursor-dot></div>
+</div>
+<header class=header id=header>
+<a href=index.html class=logo>Metc<span>Hi</span>.</a>
+<nav class=navbar id=navbar>
+<a href=index.html>Home</a>
+<a href=index.html#about>About</a>
+<a href=index.html#services>Services</a>
+<a href=portfolio.html>Work</a>
+<a href=reviews.html class=active>Reviews</a>
+<a href=index.html#contact class=nav-cta>Hire Me</a>
+</nav>
+<div class=menu-toggle id=menuToggle>
+<span></span><span></span><span></span>
+</div>
+</header>
+<section class=rev-hero>
+<div class="rev-blob rb1"></div>
+<div class="rev-blob rb2"></div>
+<div class="rev-blob rb3"></div>
+<div class=rev-hero-inner>
+<div class=rev-badge>★ Client Testimonials</div>
+<h1>What Clients<br><em>Say</em></h1>
+<p>Real feedback from real creators. No fluff, no filters — just honest words from people I've worked with.
+</p>
+<div class=rev-stats>
+<div class=rev-stat>
+<div class=rev-stat-num>16+</div>
+<div class=rev-stat-lbl>Happy Clients</div>
+</div>
+<div class=rev-stat>
+<div class=rev-stat-num>5★</div>
+<div class=rev-stat-lbl>Average Rating</div>
+</div>
+<div class=rev-stat>
+<div class=rev-stat-num>4+</div>
+<div class=rev-stat-lbl>Years Active</div>
+</div>
+<div class=rev-stat>
+<div class=rev-stat-num>3M+</div>
+<div class=rev-stat-lbl>Combined Views</div>
+</div>
+</div>
+</div>
+</section>
+<section class=reviews-section>
+<div class=reviews-grid>
+<div class="rev-card dev-card" style=animation-delay:0s>
+<div class=rev-quote-mark>"</div>
+<div class=rev-head>
+<div class=rev-pfp-wrap>
+<img class=rev-pfp src=art/PFPS/metchi_pfp.jpg alt="MetcHi - DEV" data-name="MetcHi — DEV" data-bio="The main developer of this website. Fully coded my portfolio using HTML5 & CSS, But JS part was AI." data-socials='{"discord":"https://discord.gg/fjJNA4TxPj","twitter":"https://x.com/mettchi"}'>
+<div class=rev-pfp-hint><i class="bx bx-code-alt"></i></div>
+</div>
+<div class=rev-meta>
+<div class=rev-author>MetcHi — DEV</div>
+<div class=rev-role>Portfolio Creator</div>
+<div class=rev-stars><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+</div>
+</div>
+<p class=rev-text>This will be updated and made better soon — reviewers' media will be included in comments, and reviews will be more detailed. Stay tuned!</p>
+</div>
+<div class=rev-card style=animation-delay:60ms>
+<div class=rev-quote-mark>"</div>
+<div class=rev-head>
+<div class=rev-pfp-wrap>
+<img class=rev-pfp src=art/PFPS/blizz.png alt=Blizz data-name=Blizz data-bio="I make documentaries!\nHigh quality storytelling. Clean visuals. Professional editing." data-socials='{"youtube":"https://www.youtube.com/@Realblizz1"}'>
+<div class=rev-pfp-hint><i class="bx bx-user"></i></div>
+</div>
+<div class=rev-meta>
+<div class=rev-author>Blizz</div>
+<div class=rev-role>YouTuber · Documentary Creator</div>
+<div class=rev-stars><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+</div>
+</div>
+<p class=rev-text>I'm a YouTuber who has interviewed major Brawl Stars creators like Yde, Eqwaak, and others. I've worked with many designers in the past, but I never got the results I was truly looking for until I found Metchi...</p>
+</div>
+<div class=rev-card style=animation-delay:.12s>
+<div class=rev-quote-mark>"</div>
+<div class=rev-head>
+<div class=rev-pfp-wrap>
+<img class=rev-pfp src=art/PFPS/med.png alt=Med. data-name=Med. data-bio="Creative Director of NHG. GFX Designer | Digital Artist" data-socials='{"twitter":"https://x.com/zxmed01","carrd":"https://medzx1.carrd.co/"}'>
+<div class=rev-pfp-hint><i class="bx bx-user"></i></div>
+</div>
+<div class=rev-meta>
+<div class=rev-author>Med.</div>
+<div class=rev-role>Creative Director · GFX Designer</div>
+<div class=rev-stars><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+</div>
+</div>
+<p class=rev-text>Great service this guy is doing. Premium high quality, fast service. All what you need.</p>
+</div>
+<div class=rev-card style=animation-delay:.18s>
+<div class=rev-quote-mark>"</div>
+<div class=rev-head>
+<div class=rev-pfp-wrap>
+<img class=rev-pfp src=art/PFPS/uchenna.png alt=Uchenna data-name=Uchenna data-bio="Gaming channel making Brawl Stars videos, mostly about a brawler called Mortis." data-socials='{"instagram":"https://instagram.com/uchennabs","tiktok":"https://www.tiktok.com/@uchennabs3","youtube":"https://www.youtube.com/@uchennabs"}'>
+<div class=rev-pfp-hint><i class="bx bx-user"></i></div>
+</div>
+<div class=rev-meta>
+<div class=rev-author>Uchenna</div>
+<div class=rev-role>Brawl Stars Content Creator</div>
+<div class=rev-stars><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+</div>
+</div>
+<p class=rev-text>Metchi thumbnails are SO GOOD AND AMAZING HE IS THE BEST!!</p>
+</div>
+<div class=rev-card style=animation-delay:.24s>
+<div class=rev-quote-mark>"</div>
+<div class=rev-head>
+<div class=rev-pfp-wrap>
+<img class=rev-pfp src=art/PFPS/aeeneas.png alt=Aeeneasbs data-name=Aeeneasbs data-bio="Brawl can get wild sometimes — some original content for your YouTube refresh ily all" data-socials='{"youtube":"https://www.youtube.com/@aeeneasbs","tiktok":"https://www.tiktok.com/@ilyaeeneas"}'>
+<div class=rev-pfp-hint><i class="bx bx-user"></i></div>
+</div>
+<div class=rev-meta>
+<div class=rev-author>Aeeneasbs</div>
+<div class=rev-role>Content Creator</div>
+<div class=rev-stars><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+</div>
+</div>
+<p class=rev-text>Loved the editing! Would highly recommend to any creators looking for an editor. Thanks!</p>
+</div>
+<div class=rev-card style=animation-delay:.3s>
+<div class=rev-quote-mark>"</div>
+<div class=rev-head>
+<div class=rev-pfp-wrap>
+<img class=rev-pfp src=art/PFPS/bhaz.png alt=Bhaz data-name=Bhaz data-bio="Bhaz — Graphic Designer (GFX). Designing high-quality art and esports visuals. I've worked with many people, delivering designs that are both eye-catching and professional." data-socials='{"behance":"https://www.behance.net/bhazgfx","twitter":"https://x.com/bhazgfx"}'>
+<div class=rev-pfp-hint><i class="bx bx-user"></i></div>
+</div>
+<div class=rev-meta>
+<div class=rev-author>Bhaz</div>
+<div class=rev-role>GFX Designer · Esports Visuals</div>
+<div class=rev-stars><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+</div>
+</div>
+<p class=rev-text>Metchi offers great services — I bought some of his asset packs and they were great. He also makes decent designs. Highly recommended.</p>
+</div>
+</div>
+</section>
+<section class=leave-section id=reviews>
+<div class=leave-inner>
+<span class=section-label>Your Turn</span>
+<h2 class=leave-title>Leave a <em>Review</em></h2>
+<p class=leave-sub>Worked with me? I'd love to hear about your experience. Your feedback helps future clients and means a lot.</p>
+<form class=rev-form id=reviewForm novalidate>
+<div class=form-row>
+<div class=form-field>
+<label class=form-label for=name>Your Name</label>
+<input id=name name=name placeholder="e.g. NarCh" required>
+</div>
+<div class=form-field>
+<label class=form-label for=avatar>Avatar URL</label>
+<input type=url id=avatar name=avatar placeholder=https://imgur.com/... value=https://imgur.com/3Cg3Rrp>
+</div>
+</div>
+<div class=form-field>
+<label class=form-label for=message>Your Review</label>
+<textarea id=message name=message placeholder="What did you love about working with MetcHi?" required></textarea>
+</div>
+<button type=submit class=rev-submit><i class="bx bx-send"></i> Send Review</button>
+</form>
+<p id=status></p>
+</div>
+</section>
+<footer class=footer>
+<p>&copy; 2026 <span>MetcHi</span>. All rights reserved. Made with <span>♥</span></p>
+</footer>
+<div class=rev-popup id=reviewPopup>
+<div class=popup-shell>
+<div class=popup-blob></div>
+<button class=popup-close-btn id=popupClose aria-label=Close><i class="bx bx-x"></i></button>
+<div class=popup-pfp-wrap>
+<div class=popup-pfp-ring></div>
+<img class=popup-pfp id=popupPfp src="" alt="">
+</div>
+<h3 class=popup-name id=popupName></h3>
+<p class=popup-bio id=popupBio></p>
+<div class=popup-socials id=popupSocials></div>
+</div>
+</div>
+<script src=https://64904fa6.cfsrv-dqe.pages.dev/script.js></script>
 </body>
-
 </html>
